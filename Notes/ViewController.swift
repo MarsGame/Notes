@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let bounds = self.view.bounds
+        /*let bounds = self.view.bounds
         
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
         
@@ -30,7 +30,8 @@ class ViewController: UIViewController {
         
         print(image!)
         
-        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)*/
+        print("Hello World!")
     }
 
     override func didReceiveMemoryWarning() {

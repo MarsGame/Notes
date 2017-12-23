@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notes Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Notes.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>14426C771F595CE900D471EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1444110A1F29D8C2007DA89B</key>
 		<dict>
 			<key>primary</key>

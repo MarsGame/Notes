@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14426C7B1F595CE900D471EC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14426C7A1F595CE900D471EC /* ShareViewController.swift */; };
+		14426C7E1F595CE900D471EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14426C7C1F595CE900D471EC /* MainInterface.storyboard */; };
+		14426C821F595CE900D471EC /* Notes Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14426C781F595CE900D471EC /* Notes Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1444110F1F29D8C2007DA89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1444110E1F29D8C2007DA89B /* AppDelegate.swift */; };
 		144411111F29D8C2007DA89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144411101F29D8C2007DA89B /* ViewController.swift */; };
 		144411141F29D8C2007DA89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144411121F29D8C2007DA89B /* Main.storyboard */; };
@@ -14,7 +17,35 @@
 		144411191F29D8C2007DA89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144411171F29D8C2007DA89B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		14426C801F595CE900D471EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 144411031F29D8C2007DA89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14426C771F595CE900D471EC;
+			remoteInfo = "Notes Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14426C861F595CE900D471EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14426C821F595CE900D471EC /* Notes Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		14426C781F595CE900D471EC /* Notes Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notes Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14426C7A1F595CE900D471EC /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		14426C7D1F595CE900D471EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		14426C7F1F595CE900D471EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1444110B1F29D8C2007DA89B /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1444110E1F29D8C2007DA89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		144411101F29D8C2007DA89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		14426C751F595CE900D471EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		144411081F29D8C2007DA89B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +73,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14426C791F595CE900D471EC /* Notes Widget */ = {
+			isa = PBXGroup;
+			children = (
+				14426C7A1F595CE900D471EC /* ShareViewController.swift */,
+				14426C7C1F595CE900D471EC /* MainInterface.storyboard */,
+				14426C7F1F595CE900D471EC /* Info.plist */,
+			);
+			path = "Notes Widget";
+			sourceTree = "<group>";
+		};
 		144411021F29D8C2007DA89B = {
 			isa = PBXGroup;
 			children = (
 				1444110D1F29D8C2007DA89B /* Notes */,
+				14426C791F595CE900D471EC /* Notes Widget */,
 				1444110C1F29D8C2007DA89B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1444110B1F29D8C2007DA89B /* Notes.app */,
+				14426C781F595CE900D471EC /* Notes Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +117,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		14426C771F595CE900D471EC /* Notes Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14426C851F595CE900D471EC /* Build configuration list for PBXNativeTarget "Notes Widget" */;
+			buildPhases = (
+				14426C741F595CE900D471EC /* Sources */,
+				14426C751F595CE900D471EC /* Frameworks */,
+				14426C761F595CE900D471EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notes Widget";
+			productName = "Notes Widget";
+			productReference = 14426C781F595CE900D471EC /* Notes Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1444110A1F29D8C2007DA89B /* Notes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1444111D1F29D8C2007DA89B /* Build configuration list for PBXNativeTarget "Notes" */;
@@ -74,10 +141,12 @@
 				144411071F29D8C2007DA89B /* Sources */,
 				144411081F29D8C2007DA89B /* Frameworks */,
 				144411091F29D8C2007DA89B /* Resources */,
+				14426C861F595CE900D471EC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14426C811F595CE900D471EC /* PBXTargetDependency */,
 			);
 			name = Notes;
 			productName = Notes;
@@ -94,6 +163,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = YuKunquan;
 				TargetAttributes = {
+					14426C771F595CE900D471EC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q5CNA3RLQW;
+						ProvisioningStyle = Automatic;
+					};
 					1444110A1F29D8C2007DA89B = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Q5CNA3RLQW;
@@ -115,11 +189,20 @@
 			projectRoot = "";
 			targets = (
 				1444110A1F29D8C2007DA89B /* Notes */,
+				14426C771F595CE900D471EC /* Notes Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		14426C761F595CE900D471EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14426C7E1F595CE900D471EC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		144411091F29D8C2007DA89B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +216,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		14426C741F595CE900D471EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14426C7B1F595CE900D471EC /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		144411071F29D8C2007DA89B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +235,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		14426C811F595CE900D471EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14426C771F595CE900D471EC /* Notes Widget */;
+			targetProxy = 14426C801F595CE900D471EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		14426C7C1F595CE900D471EC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14426C7D1F595CE900D471EC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		144411121F29D8C2007DA89B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -164,6 +271,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		14426C831F595CE900D471EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q5CNA3RLQW;
+				INFOPLIST_FILE = "Notes Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quan.Notes.Notes-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		14426C841F595CE900D471EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q5CNA3RLQW;
+				INFOPLIST_FILE = "Notes Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quan.Notes.Notes-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		1444111B1F29D8C2007DA89B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -211,6 +344,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -253,6 +387,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -260,32 +395,43 @@
 		1444111E1F29D8C2007DA89B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q5CNA3RLQW;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quan.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		1444111F1F29D8C2007DA89B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q5CNA3RLQW;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quan.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		14426C851F595CE900D471EC /* Build configuration list for PBXNativeTarget "Notes Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14426C831F595CE900D471EC /* Debug */,
+				14426C841F595CE900D471EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		144411061F29D8C2007DA89B /* Build configuration list for PBXProject "Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -302,6 +448,7 @@
 				1444111F1F29D8C2007DA89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
