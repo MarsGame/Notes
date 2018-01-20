@@ -25,15 +25,35 @@ class ShareViewController: SLComposeServiceViewController {
                 itemProvider?.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (decoder, error) -> Void in
                     if let text = decoder as? NSString {
                         print(text)
-                
-                        let attributes = [
-                            NSAttributedStringKey.foregroundColor: UIColor.yellow,
-                            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 22)
-                        ]
-                        let textSize = text.size(withAttributes: attributes)
+                        let paragraph = NSMutableParagraphStyle.init()
+                        paragraph.lineBreakMode = NSLineBreakMode.byWordWrapping
                         
-                        UIGraphicsBeginImageContextWithOptions(textSize, true, 0)
-                        text.draw(at: CGPoint.zero, withAttributes: attributes)
+                        
+                        let attributes = [
+                            NSAttributedStringKey.backgroundColor: UIColor.white,
+                            NSAttributedStringKey.foregroundColor: UIColor.black,
+                            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 22),
+                            NSAttributedStringKey.paragraphStyle: paragraph
+                            
+                        ]
+//                        let textSize = text.size(withAttributes: attributes)
+                        let imageRect = text.boundingRect(with: CGSize.init(width: UIScreen.main.bounds.width, height: CGFloat.greatestFiniteMagnitude), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attributes, context: nil)
+                        let imageSize = CGSize.init(width: UIScreen.main.bounds.width, height: ceil(imageRect.size.height))
+                        
+                        print("---------------")
+                        print(UIScreen.main.bounds.size)
+                        
+                        print("---------------")
+                        print(imageSize)
+                        
+                        print("---------------")
+                        print(UIScreen.main.scale)
+                        
+                        UIGraphicsBeginImageContextWithOptions(imageSize, false, 0)
+                        
+                        let imagePoint = CGPoint(x: 0, y: 0)
+                        let imageRange = CGRect.init(origin: imagePoint, size: imageSize)
+                        text.draw(in: imageRange, withAttributes: attributes)
                         let image = UIGraphicsGetImageFromCurrentImageContext()
                         UIGraphicsEndImageContext()
                         
